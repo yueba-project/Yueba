@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CF611A91595E7C100BDB162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611A81595E7C100BDB162 /* UIKit.framework */; };
+		9CF611AB1595E7C100BDB162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611AA1595E7C100BDB162 /* Foundation.framework */; };
+		9CF611AD1595E7C100BDB162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611AC1595E7C100BDB162 /* CoreGraphics.framework */; };
+		9CF611B31595E7C100BDB162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611B11595E7C100BDB162 /* InfoPlist.strings */; };
+		9CF611B51595E7C100BDB162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611B41595E7C100BDB162 /* main.m */; };
+		9CF611B91595E7C100BDB162 /* YuebaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611B81595E7C100BDB162 /* YuebaAppDelegate.m */; };
+		9CF611BC1595E7C100BDB162 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611BA1595E7C100BDB162 /* MainStoryboard.storyboard */; };
+		9CF611BF1595E7C100BDB162 /* YuebaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611BE1595E7C100BDB162 /* YuebaViewController.m */; };
+		9CF611C71595E7C200BDB162 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611C61595E7C200BDB162 /* SenTestingKit.framework */; };
+		9CF611C81595E7C200BDB162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611A81595E7C100BDB162 /* UIKit.framework */; };
+		9CF611C91595E7C200BDB162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611AA1595E7C100BDB162 /* Foundation.framework */; };
+		9CF611D11595E7C200BDB162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611CF1595E7C200BDB162 /* InfoPlist.strings */; };
+		9CF611D41595E7C200BDB162 /* YuebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611D31595E7C200BDB162 /* YuebaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CF611CA1595E7C200BDB162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF6119B1595E7C000BDB162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CF611A31595E7C100BDB162;
+			remoteInfo = Yueba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CF611A41595E7C100BDB162 /* Yueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF611A81595E7C100BDB162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9CF611AA1595E7C100BDB162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9CF611AC1595E7C100BDB162 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9CF611B01595E7C100BDB162 /* Yueba-Info.plist */ = {isa = PBXFileReference; path = "Yueba-Info.plist"; sourceTree = "<group>"; };
+		9CF611B21595E7C100BDB162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CF611B41595E7C100BDB162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CF611B61595E7C100BDB162 /* Yueba-Prefix.pch */ = {isa = PBXFileReference; path = "Yueba-Prefix.pch"; sourceTree = "<group>"; };
+		9CF611B71595E7C100BDB162 /* YuebaAppDelegate.h */ = {isa = PBXFileReference; path = YuebaAppDelegate.h; sourceTree = "<group>"; };
+		9CF611B81595E7C100BDB162 /* YuebaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuebaAppDelegate.m; sourceTree = "<group>"; };
+		9CF611BB1595E7C100BDB162 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9CF611BD1595E7C100BDB162 /* YuebaViewController.h */ = {isa = PBXFileReference; path = YuebaViewController.h; sourceTree = "<group>"; };
+		9CF611BE1595E7C100BDB162 /* YuebaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuebaViewController.m; sourceTree = "<group>"; };
+		9CF611C51595E7C200BDB162 /* YuebaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuebaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF611C61595E7C200BDB162 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9CF611CE1595E7C200BDB162 /* YuebaTests-Info.plist */ = {isa = PBXFileReference; path = "YuebaTests-Info.plist"; sourceTree = "<group>"; };
+		9CF611D01595E7C200BDB162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CF611D21595E7C200BDB162 /* YuebaTests.h */ = {isa = PBXFileReference; path = YuebaTests.h; sourceTree = "<group>"; };
+		9CF611D31595E7C200BDB162 /* YuebaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuebaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CF611A11595E7C100BDB162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF611A91595E7C100BDB162 /* UIKit.framework in Frameworks */,
+				9CF611AB1595E7C100BDB162 /* Foundation.framework in Frameworks */,
+				9CF611AD1595E7C100BDB162 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF611C11595E7C200BDB162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF611C71595E7C200BDB162 /* SenTestingKit.framework in Frameworks */,
+				9CF611C81595E7C200BDB162 /* UIKit.framework in Frameworks */,
+				9CF611C91595E7C200BDB162 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF611991595E7C000BDB162 = {
+			isa = PBXGroup;
+			children = (
+				9CF611AE1595E7C100BDB162 /* Yueba */,
+				9CF611CC1595E7C200BDB162 /* YuebaTests */,
+				9CF611A71595E7C100BDB162 /* Frameworks */,
+				9CF611A51595E7C100BDB162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CF611A51595E7C100BDB162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF611A41595E7C100BDB162 /* Yueba.app */,
+				9CF611C51595E7C200BDB162 /* YuebaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF611A71595E7C100BDB162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CF611A81595E7C100BDB162 /* UIKit.framework */,
+				9CF611AA1595E7C100BDB162 /* Foundation.framework */,
+				9CF611AC1595E7C100BDB162 /* CoreGraphics.framework */,
+				9CF611C61595E7C200BDB162 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF611AE1595E7C100BDB162 /* Yueba */ = {
+			isa = PBXGroup;
+			children = (
+				9CF611B71595E7C100BDB162 /* YuebaAppDelegate.h */,
+				9CF611B81595E7C100BDB162 /* YuebaAppDelegate.m */,
+				9CF611BA1595E7C100BDB162 /* MainStoryboard.storyboard */,
+				9CF611BD1595E7C100BDB162 /* YuebaViewController.h */,
+				9CF611BE1595E7C100BDB162 /* YuebaViewController.m */,
+				9CF611AF1595E7C100BDB162 /* Supporting Files */,
+			);
+			path = Yueba;
+			sourceTree = "<group>";
+		};
+		9CF611AF1595E7C100BDB162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CF611B01595E7C100BDB162 /* Yueba-Info.plist */,
+				9CF611B11595E7C100BDB162 /* InfoPlist.strings */,
+				9CF611B41595E7C100BDB162 /* main.m */,
+				9CF611B61595E7C100BDB162 /* Yueba-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CF611CC1595E7C200BDB162 /* YuebaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CF611D21595E7C200BDB162 /* YuebaTests.h */,
+				9CF611D31595E7C200BDB162 /* YuebaTests.m */,
+				9CF611CD1595E7C200BDB162 /* Supporting Files */,
+			);
+			path = YuebaTests;
+			sourceTree = "<group>";
+		};
+		9CF611CD1595E7C200BDB162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CF611CE1595E7C200BDB162 /* YuebaTests-Info.plist */,
+				9CF611CF1595E7C200BDB162 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CF611A31595E7C100BDB162 /* Yueba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF611D71595E7C200BDB162 /* Build configuration list for PBXNativeTarget "Yueba" */;
+			buildPhases = (
+				9CF611A01595E7C100BDB162 /* Sources */,
+				9CF611A11595E7C100BDB162 /* Frameworks */,
+				9CF611A21595E7C100BDB162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yueba;
+			productName = Yueba;
+			productReference = 9CF611A41595E7C100BDB162 /* Yueba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CF611C41595E7C200BDB162 /* YuebaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF611DA1595E7C200BDB162 /* Build configuration list for PBXNativeTarget "YuebaTests" */;
+			buildPhases = (
+				9CF611C01595E7C200BDB162 /* Sources */,
+				9CF611C11595E7C200BDB162 /* Frameworks */,
+				9CF611C21595E7C200BDB162 /* Resources */,
+				9CF611C31595E7C200BDB162 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CF611CB1595E7C200BDB162 /* PBXTargetDependency */,
+			);
+			name = YuebaTests;
+			productName = YuebaTests;
+			productReference = 9CF611C51595E7C200BDB162 /* YuebaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CF6119B1595E7C000BDB162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Yueba;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 9CF6119E1595E7C000BDB162 /* Build configuration list for PBXProject "Yueba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CF611991595E7C000BDB162;
+			productRefGroup = 9CF611A51595E7C100BDB162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF611A31595E7C100BDB162 /* Yueba */,
+				9CF611C41595E7C200BDB162 /* YuebaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CF611A21595E7C100BDB162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF611B31595E7C100BDB162 /* InfoPlist.strings in Resources */,
+				9CF611BC1595E7C100BDB162 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF611C21595E7C200BDB162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF611D11595E7C200BDB162 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CF611C31595E7C200BDB162 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF611A01595E7C100BDB162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF611B51595E7C100BDB162 /* main.m in Sources */,
+				9CF611B91595E7C100BDB162 /* YuebaAppDelegate.m in Sources */,
+				9CF611BF1595E7C100BDB162 /* YuebaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF611C01595E7C200BDB162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF611D41595E7C200BDB162 /* YuebaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CF611CB1595E7C200BDB162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CF611A31595E7C100BDB162 /* Yueba */;
+			targetProxy = 9CF611CA1595E7C200BDB162 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CF611B11595E7C100BDB162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CF611B21595E7C100BDB162 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CF611BA1595E7C100BDB162 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CF611BB1595E7C100BDB162 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		9CF611CF1595E7C200BDB162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CF611D01595E7C200BDB162 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CF611D51595E7C200BDB162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CF611D61595E7C200BDB162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF611D81595E7C200BDB162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yueba/Yueba-Prefix.pch";
+				INFOPLIST_FILE = "Yueba/Yueba-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9CF611D91595E7C200BDB162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yueba/Yueba-Prefix.pch";
+				INFOPLIST_FILE = "Yueba/Yueba-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9CF611DB1595E7C200BDB162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Yueba.app/Yueba";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yueba/Yueba-Prefix.pch";
+				INFOPLIST_FILE = "YuebaTests/YuebaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9CF611DC1595E7C200BDB162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Yueba.app/Yueba";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yueba/Yueba-Prefix.pch";
+				INFOPLIST_FILE = "YuebaTests/YuebaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CF6119E1595E7C000BDB162 /* Build configuration list for PBXProject "Yueba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF611D51595E7C200BDB162 /* Debug */,
+				9CF611D61595E7C200BDB162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF611D71595E7C200BDB162 /* Build configuration list for PBXNativeTarget "Yueba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF611D81595E7C200BDB162 /* Debug */,
+				9CF611D91595E7C200BDB162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CF611DA1595E7C200BDB162 /* Build configuration list for PBXNativeTarget "YuebaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF611DB1595E7C200BDB162 /* Debug */,
+				9CF611DC1595E7C200BDB162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CF6119B1595E7C000BDB162 /* Project object */;
+}
