@@ -106,21 +106,169 @@
                     </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="222" y="79"/>
         </scene>
-        <!--View Controller - 酒吧-->
+        <!--Yueba Pub List View Controller - 酒吧-->
         <scene sceneID="s9c-Jv-ZtP">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJ2-Fp-y0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="byo-Dq-e9c" sceneMemberID="viewController">
+                <viewController id="byo-Dq-e9c" customClass="YuebaPubListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbZ-3D-Zov">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xte-28-gxV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PubListCell" id="WDH-0z-lZg" customClass="YuebaPubListTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="eUn-A6-lO2">
+                                                    <rect key="frame" x="20" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xgv-dQ-3l4">
+                                                    <rect key="frame" x="63" y="0.0" width="178" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cnc-fh-gnr">
+                                                    <rect key="frame" x="63" y="20" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="5US-kb-PVD">
+                                                    <rect key="frame" x="258" y="0.0" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="pubDistance" destination="5US-kb-PVD" id="dCZ-RU-Ces"/>
+                                            <outlet property="pubIcon" destination="eUn-A6-lO2" id="cEB-cp-v6e"/>
+                                            <outlet property="pubName" destination="xgv-dQ-3l4" id="FHq-LJ-Knn"/>
+                                            <outlet property="pubPopularity" destination="cnc-fh-gnr" id="0h7-Pd-jYe"/>
+                                            <segue destination="ZtE-Wg-6Et" kind="push" id="WVI-8u-7YE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="byo-Dq-e9c" id="FdG-8J-vcP"/>
+                                    <outlet property="delegate" destination="byo-Dq-e9c" id="Qtn-zA-diL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="酒吧" image="pub.png" id="nPm-NZ-UDP"/>
+                    <navigationItem key="navigationItem" title="酒吧" id="ua5-QJ-16i">
+                        <barButtonItem key="backBarButtonItem" title="列表" id="ixf-gz-whV"/>
+                        <barButtonItem key="rightBarButtonItem" title="地图" id="6wB-Rv-cus">
+                            <connections>
+                                <segue destination="27h-e9-yKQ" kind="push" id="DN8-Ni-NRx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pubListTable" destination="xte-28-gxV" id="O7b-iv-NHa"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1172" y="-495"/>
+            <point key="canvasLocation" x="1698" y="-495"/>
+        </scene>
+        <!--View Controller - 酒吧-->
+        <scene sceneID="ly6-Ge-2de">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vjh-pR-RNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="27h-e9-yKQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nxQ-9C-j9y">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" id="WWM-qf-G1E">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="29x-Va-tLK">
+                                <rect key="frame" x="0.0" y="44" width="320" height="323"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="酒吧" id="uvn-KP-XOP"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2191" y="-865"/>
+        </scene>
+        <!--View Controller - 酒吧-->
+        <scene sceneID="u41-oK-7ky">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Cc-Nl-sGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ZtE-Wg-6Et" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hx3-YF-yaZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bar1.png" id="KIO-hq-lHa">
+                                <rect key="frame" x="35" y="36" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="C7p-L4-VeX">
+                                <rect key="frame" x="57" y="92" width="207" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="酒吧墙"/>
+                                    <segment title="签到用户"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="丽莉马莲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Gc6-bU-LtP">
+                                <rect key="frame" x="99" y="14" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="130人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2qS-gz-yG3">
+                                <rect key="frame" x="99" y="56" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rb7-uO-GQH">
+                                <rect key="frame" x="228" y="14" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="签到">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="酒吧" id="SkD-Qz-zkC"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2191" y="-137"/>
         </scene>
         <!--View Controller - 我的资料-->
         <scene sceneID="LaU-VM-u3G">
@@ -187,7 +335,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evz-fS-dPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="YPw-qJ-6fH" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Hul-64-bu6">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -195,7 +343,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="gRe-3B-8vg" kind="relationship" relationship="viewControllers" id="Skp-u1-onF"/>
-                        <segue destination="byo-Dq-e9c" kind="relationship" relationship="viewControllers" id="iug-5c-vGq"/>
+                        <segue destination="quI-xA-FVa" kind="relationship" relationship="viewControllers" id="iug-5c-vGq"/>
                         <segue destination="apJ-zh-dfS" kind="relationship" relationship="viewControllers" id="i4i-2a-S7s"/>
                         <segue destination="aof-Ue-S1e" kind="relationship" relationship="viewControllers" id="1Ps-ez-LPc"/>
                         <segue destination="dmh-Mf-rRp" kind="relationship" relationship="viewControllers" id="QTY-cm-4sr"/>
@@ -204,8 +352,28 @@
             </objects>
             <point key="canvasLocation" x="634" y="79"/>
         </scene>
+        <!--Navigation Controller - 酒吧-->
+        <scene sceneID="bUf-ph-rqR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWh-Ci-ybs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="quI-xA-FVa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="酒吧" image="pub.png" id="nPm-NZ-UDP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="pv0-Zb-Una">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="byo-Dq-e9c" kind="relationship" relationship="rootViewController" id="WDJ-Kx-ERR"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1172" y="-495"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bar1.png" width="30" height="30"/>
         <image name="config.png" width="30" height="30"/>
         <image name="friend.png" width="30" height="30"/>
         <image name="info.png" width="30" height="30"/>
@@ -221,6 +389,21 @@
                 <relationship kind="action" name="touchBackground:"/>
                 <relationship kind="outlet" name="password" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="username" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="YuebaPubListTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/YuebaPubListTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pubDistance" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pubIcon" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="pubName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pubPopularity" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="YuebaPubListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/YuebaPubListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pubListTable" candidateClass="UITableView"/>
             </relationships>
         </class>
     </classes>

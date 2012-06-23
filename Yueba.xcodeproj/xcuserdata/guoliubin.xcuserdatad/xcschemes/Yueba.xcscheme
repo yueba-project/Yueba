@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9CF611A31595E7C100BDB162"
-               BuildableName = "Yueba.app"
+               BuildableName = "&#32422;&#21543;.app"
                BlueprintName = "Yueba"
                ReferencedContainer = "container:Yueba.xcodeproj">
             </BuildableReference>
@@ -42,7 +42,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CF611A31595E7C100BDB162"
-            BuildableName = "Yueba.app"
+            BuildableName = "&#32422;&#21543;.app"
             BlueprintName = "Yueba"
             ReferencedContainer = "container:Yueba.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CF611A31595E7C100BDB162"
-            BuildableName = "Yueba.app"
+            BuildableName = "&#32422;&#21543;.app"
             BlueprintName = "Yueba"
             ReferencedContainer = "container:Yueba.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CF611A31595E7C100BDB162"
-            BuildableName = "Yueba.app"
+            BuildableName = "&#32422;&#21543;.app"
             BlueprintName = "Yueba"
             ReferencedContainer = "container:Yueba.xcodeproj">
          </BuildableReference>
