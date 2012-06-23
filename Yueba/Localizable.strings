@@ -5,3 +5,6 @@
   Created by gg iyak on 6/23/12.
   Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 */
+"loginErrorTitle"="登陆错误";
+"loginErrorMessage"="请输入用户名和密码";
+"loginErrorButton"="确定";

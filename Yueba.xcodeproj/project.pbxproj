@@ -14,12 +14,20 @@
 		9CF611B51595E7C100BDB162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611B41595E7C100BDB162 /* main.m */; };
 		9CF611B91595E7C100BDB162 /* YuebaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611B81595E7C100BDB162 /* YuebaAppDelegate.m */; };
 		9CF611BC1595E7C100BDB162 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611BA1595E7C100BDB162 /* MainStoryboard.storyboard */; };
-		9CF611BF1595E7C100BDB162 /* YuebaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611BE1595E7C100BDB162 /* YuebaViewController.m */; };
+		9CF611BF1595E7C100BDB162 /* YuebaLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611BE1595E7C100BDB162 /* YuebaLoginViewController.m */; };
 		9CF611C71595E7C200BDB162 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611C61595E7C200BDB162 /* SenTestingKit.framework */; };
 		9CF611C81595E7C200BDB162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611A81595E7C100BDB162 /* UIKit.framework */; };
 		9CF611C91595E7C200BDB162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF611AA1595E7C100BDB162 /* Foundation.framework */; };
 		9CF611D11595E7C200BDB162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611CF1595E7C200BDB162 /* InfoPlist.strings */; };
 		9CF611D41595E7C200BDB162 /* YuebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF611D31595E7C200BDB162 /* YuebaTests.m */; };
+		9CF611E51595E7F500BDB162 /* yueba.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611DE1595E7F500BDB162 /* yueba.png */; };
+		9CF611E61595E7F500BDB162 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611DF1595E7F500BDB162 /* config.png */; };
+		9CF611E71595E7F500BDB162 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611E01595E7F500BDB162 /* info.png */; };
+		9CF611E81595E7F500BDB162 /* pub.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611E11595E7F500BDB162 /* pub.png */; };
+		9CF611EB1595E7F500BDB162 /* friend.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611E41595E7F500BDB162 /* friend.png */; };
+		9CF611ED1595E80A00BDB162 /* Pub-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611EC1595E80A00BDB162 /* Pub-small.png */; };
+		9CF611EF1595E81100BDB162 /* Pub-med.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611EE1595E81100BDB162 /* Pub-med.png */; };
+		9CF611F11595EAAB00BDB162 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611F01595EAAB00BDB162 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,25 +41,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9CF611A41595E7C100BDB162 /* Yueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF611A41595E7C100BDB162 /* 约吧.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "约吧.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF611A81595E7C100BDB162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9CF611AA1595E7C100BDB162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CF611AC1595E7C100BDB162 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9CF611B01595E7C100BDB162 /* Yueba-Info.plist */ = {isa = PBXFileReference; path = "Yueba-Info.plist"; sourceTree = "<group>"; };
+		9CF611B01595E7C100BDB162 /* Yueba-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Yueba-Info.plist"; sourceTree = "<group>"; };
 		9CF611B21595E7C100BDB162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CF611B41595E7C100BDB162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9CF611B61595E7C100BDB162 /* Yueba-Prefix.pch */ = {isa = PBXFileReference; path = "Yueba-Prefix.pch"; sourceTree = "<group>"; };
-		9CF611B71595E7C100BDB162 /* YuebaAppDelegate.h */ = {isa = PBXFileReference; path = YuebaAppDelegate.h; sourceTree = "<group>"; };
+		9CF611B61595E7C100BDB162 /* Yueba-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yueba-Prefix.pch"; sourceTree = "<group>"; };
+		9CF611B71595E7C100BDB162 /* YuebaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuebaAppDelegate.h; sourceTree = "<group>"; };
 		9CF611B81595E7C100BDB162 /* YuebaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuebaAppDelegate.m; sourceTree = "<group>"; };
 		9CF611BB1595E7C100BDB162 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9CF611BD1595E7C100BDB162 /* YuebaViewController.h */ = {isa = PBXFileReference; path = YuebaViewController.h; sourceTree = "<group>"; };
-		9CF611BE1595E7C100BDB162 /* YuebaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuebaViewController.m; sourceTree = "<group>"; };
+		9CF611BD1595E7C100BDB162 /* YuebaLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuebaLoginViewController.h; sourceTree = "<group>"; };
+		9CF611BE1595E7C100BDB162 /* YuebaLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuebaLoginViewController.m; sourceTree = "<group>"; };
 		9CF611C51595E7C200BDB162 /* YuebaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuebaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF611C61595E7C200BDB162 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9CF611CE1595E7C200BDB162 /* YuebaTests-Info.plist */ = {isa = PBXFileReference; path = "YuebaTests-Info.plist"; sourceTree = "<group>"; };
+		9CF611CE1595E7C200BDB162 /* YuebaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YuebaTests-Info.plist"; sourceTree = "<group>"; };
 		9CF611D01595E7C200BDB162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9CF611D21595E7C200BDB162 /* YuebaTests.h */ = {isa = PBXFileReference; path = YuebaTests.h; sourceTree = "<group>"; };
+		9CF611D21595E7C200BDB162 /* YuebaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuebaTests.h; sourceTree = "<group>"; };
 		9CF611D31595E7C200BDB162 /* YuebaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuebaTests.m; sourceTree = "<group>"; };
+		9CF611DE1595E7F500BDB162 /* yueba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yueba.png; sourceTree = "<group>"; };
+		9CF611DF1595E7F500BDB162 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config.png; sourceTree = "<group>"; };
+		9CF611E01595E7F500BDB162 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		9CF611E11595E7F500BDB162 /* pub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pub.png; sourceTree = "<group>"; };
+		9CF611E41595E7F500BDB162 /* friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friend.png; sourceTree = "<group>"; };
+		9CF611EC1595E80A00BDB162 /* Pub-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pub-small.png"; path = "../Pub-small.png"; sourceTree = "<group>"; };
+		9CF611EE1595E81100BDB162 /* Pub-med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pub-med.png"; path = "../Pub-med.png"; sourceTree = "<group>"; };
+		9CF611F01595EAAB00BDB162 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +107,7 @@
 		9CF611A51595E7C100BDB162 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CF611A41595E7C100BDB162 /* Yueba.app */,
+				9CF611A41595E7C100BDB162 /* 约吧.app */,
 				9CF611C51595E7C200BDB162 /* YuebaTests.octest */,
 			);
 			name = Products;
@@ -114,8 +130,8 @@
 				9CF611B71595E7C100BDB162 /* YuebaAppDelegate.h */,
 				9CF611B81595E7C100BDB162 /* YuebaAppDelegate.m */,
 				9CF611BA1595E7C100BDB162 /* MainStoryboard.storyboard */,
-				9CF611BD1595E7C100BDB162 /* YuebaViewController.h */,
-				9CF611BE1595E7C100BDB162 /* YuebaViewController.m */,
+				9CF611BD1595E7C100BDB162 /* YuebaLoginViewController.h */,
+				9CF611BE1595E7C100BDB162 /* YuebaLoginViewController.m */,
 				9CF611AF1595E7C100BDB162 /* Supporting Files */,
 			);
 			path = Yueba;
@@ -124,10 +140,12 @@
 		9CF611AF1595E7C100BDB162 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9CF611DD1595E7D200BDB162 /* iconset */,
 				9CF611B01595E7C100BDB162 /* Yueba-Info.plist */,
 				9CF611B11595E7C100BDB162 /* InfoPlist.strings */,
 				9CF611B41595E7C100BDB162 /* main.m */,
 				9CF611B61595E7C100BDB162 /* Yueba-Prefix.pch */,
+				9CF611F01595EAAB00BDB162 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,6 +169,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9CF611DD1595E7D200BDB162 /* iconset */ = {
+			isa = PBXGroup;
+			children = (
+				9CF611EE1595E81100BDB162 /* Pub-med.png */,
+				9CF611EC1595E80A00BDB162 /* Pub-small.png */,
+				9CF611DE1595E7F500BDB162 /* yueba.png */,
+				9CF611DF1595E7F500BDB162 /* config.png */,
+				9CF611E01595E7F500BDB162 /* info.png */,
+				9CF611E11595E7F500BDB162 /* pub.png */,
+				9CF611E41595E7F500BDB162 /* friend.png */,
+			);
+			name = iconset;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,7 +200,7 @@
 			);
 			name = Yueba;
 			productName = Yueba;
-			productReference = 9CF611A41595E7C100BDB162 /* Yueba.app */;
+			productReference = 9CF611A41595E7C100BDB162 /* 约吧.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9CF611C41595E7C200BDB162 /* YuebaTests */ = {
@@ -224,6 +256,14 @@
 			files = (
 				9CF611B31595E7C100BDB162 /* InfoPlist.strings in Resources */,
 				9CF611BC1595E7C100BDB162 /* MainStoryboard.storyboard in Resources */,
+				9CF611E51595E7F500BDB162 /* yueba.png in Resources */,
+				9CF611E61595E7F500BDB162 /* config.png in Resources */,
+				9CF611E71595E7F500BDB162 /* info.png in Resources */,
+				9CF611E81595E7F500BDB162 /* pub.png in Resources */,
+				9CF611EB1595E7F500BDB162 /* friend.png in Resources */,
+				9CF611ED1595E80A00BDB162 /* Pub-small.png in Resources */,
+				9CF611EF1595E81100BDB162 /* Pub-med.png in Resources */,
+				9CF611F11595EAAB00BDB162 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +300,7 @@
 			files = (
 				9CF611B51595E7C100BDB162 /* main.m in Sources */,
 				9CF611B91595E7C100BDB162 /* YuebaAppDelegate.m in Sources */,
-				9CF611BF1595E7C100BDB162 /* YuebaViewController.m in Sources */,
+				9CF611BF1595E7C100BDB162 /* YuebaLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +401,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Yueba/Yueba-Prefix.pch";
 				INFOPLIST_FILE = "Yueba/Yueba-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "约吧";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,7 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Yueba/Yueba-Prefix.pch";
 				INFOPLIST_FILE = "Yueba/Yueba-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "约吧";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

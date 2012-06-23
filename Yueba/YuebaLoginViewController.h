@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YuebaViewController : UIViewController
+@interface YuebaLoginViewController : UIViewController
+{
+    IBOutlet UITextField *username;
+    IBOutlet UITextField *password;
+}
+
+@property (strong, nonatomic) UITextField *username;
+@property (strong, nonatomic) UITextField *password;
+
+- (IBAction)login:(id)sender;
+- (IBAction)hideKeyboard:(id)sender;
+- (IBAction)touchBackground:(id)sender;
 
 @end
