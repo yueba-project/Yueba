@@ -213,7 +213,7 @@
                     <navigationItem key="navigationItem" title="酒吧" id="uvn-KP-XOP"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2191" y="-865"/>
+            <point key="canvasLocation" x="2143" y="-1143"/>
         </scene>
         <!--View Controller - 酒吧-->
         <scene sceneID="u41-oK-7ky">
@@ -268,7 +268,65 @@
                     <navigationItem key="navigationItem" title="酒吧" id="SkD-Qz-zkC"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2191" y="-137"/>
+            <point key="canvasLocation" x="2143" y="-579"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="7VT-Ec-rJ0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vea-nO-2ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="VRK-9y-H6a" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IM7-ih-8RP">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatHistoryCell" id="VbT-Mj-8KI">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VRK-9y-H6a" id="5HM-S7-uO6"/>
+                            <outlet property="delegate" destination="VRK-9y-H6a" id="ZYh-jH-kBe"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="2154" y="-5"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="0QZ-zn-34S">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ic-gO-Qt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="n7W-dP-LCN" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6ap-6h-mzL">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendListCell" id="Cat-ec-gRR">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="n7W-dP-LCN" id="mUy-Jc-M73"/>
+                            <outlet property="delegate" destination="n7W-dP-LCN" id="RSQ-Ep-C5u"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="2154" y="578"/>
         </scene>
         <!--View Controller - 我的资料-->
         <scene sceneID="LaU-VM-u3G">
@@ -300,20 +358,37 @@
             </objects>
             <point key="canvasLocation" x="1172" y="-1092"/>
         </scene>
-        <!--View Controller - 好友-->
+        <!--View Controller-->
         <scene sceneID="tuU-TY-35Q">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLY-0M-0SX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="apJ-zh-dfS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QVl-7E-Jtf">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="好友" image="friend.png" id="nJg-tr-9d8"/>
+                    <navigationItem key="navigationItem" id="3yN-1Z-00q">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="ZO5-mT-0wf">
+                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="会话"/>
+                                <segment title="好友"/>
+                            </segments>
+                            <connections>
+                                <segue destination="VRK-9y-H6a" kind="modal" id="uyn-ex-FEN"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="编辑" id="AaC-M7-8Y3"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="n7W-dP-LCN" kind="modal" id="Q91-U9-oNQ"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1172" y="79"/>
+            <point key="canvasLocation" x="1698" y="79"/>
         </scene>
         <!--View Controller - 设置-->
         <scene sceneID="Mm1-WL-Lqp">
@@ -344,7 +419,7 @@
                     <connections>
                         <segue destination="gRe-3B-8vg" kind="relationship" relationship="viewControllers" id="Skp-u1-onF"/>
                         <segue destination="quI-xA-FVa" kind="relationship" relationship="viewControllers" id="iug-5c-vGq"/>
-                        <segue destination="apJ-zh-dfS" kind="relationship" relationship="viewControllers" id="i4i-2a-S7s"/>
+                        <segue destination="2Cg-HV-hiX" kind="relationship" relationship="viewControllers" id="i4i-2a-S7s"/>
                         <segue destination="aof-Ue-S1e" kind="relationship" relationship="viewControllers" id="1Ps-ez-LPc"/>
                         <segue destination="dmh-Mf-rRp" kind="relationship" relationship="viewControllers" id="QTY-cm-4sr"/>
                     </connections>
@@ -370,6 +445,25 @@
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="1172" y="-495"/>
+        </scene>
+        <!--Navigation Controller - 好友-->
+        <scene sceneID="K9Q-xg-gfr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kaf-Lh-lk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="2Cg-HV-hiX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="好友" image="friend.png" id="nJg-tr-9d8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hER-tS-IVw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="apJ-zh-dfS" kind="relationship" relationship="rootViewController" id="40l-gp-h2W"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1172" y="79"/>
         </scene>
     </scenes>
     <resources>
