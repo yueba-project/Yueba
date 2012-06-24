@@ -28,6 +28,11 @@
 		9CF611ED1595E80A00BDB162 /* Pub-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611EC1595E80A00BDB162 /* Pub-small.png */; };
 		9CF611EF1595E81100BDB162 /* Pub-med.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611EE1595E81100BDB162 /* Pub-med.png */; };
 		9CF611F11595EAAB00BDB162 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CF611F01595EAAB00BDB162 /* Localizable.strings */; };
+		9CF612121596F40B00BDB162 /* bar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CF612111596F40B00BDB162 /* bar1.png */; };
+		9CF612161596F41500BDB162 /* head1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CF612141596F41500BDB162 /* head1.jpg */; };
+		9CF612171596F41500BDB162 /* head2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CF612151596F41500BDB162 /* head2.jpg */; };
+		9CF6121D1596F4D000BDB162 /* YuebaPubListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6121A1596F4D000BDB162 /* YuebaPubListTableViewCell.m */; };
+		9CF6121E1596F4D000BDB162 /* YuebaPubListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6121C1596F4D000BDB162 /* YuebaPubListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,13 @@
 		9CF611EC1595E80A00BDB162 /* Pub-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pub-small.png"; path = "../Pub-small.png"; sourceTree = "<group>"; };
 		9CF611EE1595E81100BDB162 /* Pub-med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pub-med.png"; path = "../Pub-med.png"; sourceTree = "<group>"; };
 		9CF611F01595EAAB00BDB162 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9CF612111596F40B00BDB162 /* bar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar1.png; sourceTree = "<group>"; };
+		9CF612141596F41500BDB162 /* head1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head1.jpg; sourceTree = "<group>"; };
+		9CF612151596F41500BDB162 /* head2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head2.jpg; sourceTree = "<group>"; };
+		9CF612191596F4D000BDB162 /* YuebaPubListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuebaPubListTableViewCell.h; sourceTree = "<group>"; };
+		9CF6121A1596F4D000BDB162 /* YuebaPubListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuebaPubListTableViewCell.m; sourceTree = "<group>"; };
+		9CF6121B1596F4D000BDB162 /* YuebaPubListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuebaPubListViewController.h; sourceTree = "<group>"; };
+		9CF6121C1596F4D000BDB162 /* YuebaPubListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuebaPubListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +139,7 @@
 		9CF611AE1595E7C100BDB162 /* Yueba */ = {
 			isa = PBXGroup;
 			children = (
+				9CF612181596F49B00BDB162 /* pub */,
 				9CF611B71595E7C100BDB162 /* YuebaAppDelegate.h */,
 				9CF611B81595E7C100BDB162 /* YuebaAppDelegate.m */,
 				9CF611BA1595E7C100BDB162 /* MainStoryboard.storyboard */,
@@ -172,6 +185,7 @@
 		9CF611DD1595E7D200BDB162 /* iconset */ = {
 			isa = PBXGroup;
 			children = (
+				9CF6120F1596F32C00BDB162 /* test */,
 				9CF611EE1595E81100BDB162 /* Pub-med.png */,
 				9CF611EC1595E80A00BDB162 /* Pub-small.png */,
 				9CF611DE1595E7F500BDB162 /* yueba.png */,
@@ -181,6 +195,35 @@
 				9CF611E41595E7F500BDB162 /* friend.png */,
 			);
 			name = iconset;
+			sourceTree = "<group>";
+		};
+		9CF6120F1596F32C00BDB162 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9CF612131596F41500BDB162 /* headset */,
+				9CF612111596F40B00BDB162 /* bar1.png */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		9CF612131596F41500BDB162 /* headset */ = {
+			isa = PBXGroup;
+			children = (
+				9CF612141596F41500BDB162 /* head1.jpg */,
+				9CF612151596F41500BDB162 /* head2.jpg */,
+			);
+			path = headset;
+			sourceTree = "<group>";
+		};
+		9CF612181596F49B00BDB162 /* pub */ = {
+			isa = PBXGroup;
+			children = (
+				9CF612191596F4D000BDB162 /* YuebaPubListTableViewCell.h */,
+				9CF6121A1596F4D000BDB162 /* YuebaPubListTableViewCell.m */,
+				9CF6121B1596F4D000BDB162 /* YuebaPubListViewController.h */,
+				9CF6121C1596F4D000BDB162 /* YuebaPubListViewController.m */,
+			);
+			name = pub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +307,9 @@
 				9CF611ED1595E80A00BDB162 /* Pub-small.png in Resources */,
 				9CF611EF1595E81100BDB162 /* Pub-med.png in Resources */,
 				9CF611F11595EAAB00BDB162 /* Localizable.strings in Resources */,
+				9CF612121596F40B00BDB162 /* bar1.png in Resources */,
+				9CF612161596F41500BDB162 /* head1.jpg in Resources */,
+				9CF612171596F41500BDB162 /* head2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +347,8 @@
 				9CF611B51595E7C100BDB162 /* main.m in Sources */,
 				9CF611B91595E7C100BDB162 /* YuebaAppDelegate.m in Sources */,
 				9CF611BF1595E7C100BDB162 /* YuebaLoginViewController.m in Sources */,
+				9CF6121D1596F4D000BDB162 /* YuebaPubListTableViewCell.m in Sources */,
+				9CF6121E1596F4D000BDB162 /* YuebaPubListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +518,7 @@
 				9CF611D91595E7C200BDB162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CF611DA1595E7C200BDB162 /* Build configuration list for PBXNativeTarget "YuebaTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +527,7 @@
 				9CF611DC1595E7C200BDB162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
