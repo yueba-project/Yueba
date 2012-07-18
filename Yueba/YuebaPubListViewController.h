@@ -17,4 +17,6 @@
 @property (strong, nonatomic) NSArray *pubDistances;
 @property (strong, nonatomic) NSArray *pubPopularities;
 
+- (IBAction)showFilter:(id)sender;
+
 @end

@@ -21,6 +21,12 @@
 @synthesize pubDistances = _pubDistances;
 @synthesize pubPopularities = _pubPopularities;
 
+-(void)showFilter:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"pubListFilterButton1", nil),  NSLocalizedString(@"pubListFilterButton2", nil),nil];
+    [alert show];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 1;

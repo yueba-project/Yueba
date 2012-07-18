@@ -19,12 +19,12 @@
 
 - (void)login:(id)sender
 {
-    if ([username.text isEqualToString:@""] || [password.text isEqualToString:@""]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"loginErrorTitle", nil) message:NSLocalizedString(@"loginErrorMessage", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"loginErrorButton", nil) otherButtonTitles:nil, nil];
-        [alert show];
-    } else {
+//    if ([username.text isEqualToString:@""] || [password.text isEqualToString:@""]) {
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"loginErrorTitle", nil) message:NSLocalizedString(@"loginErrorMessage", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"loginErrorButton", nil) otherButtonTitles:nil, nil];
+//        [alert show];
+//    } else {
         [self performSegueWithIdentifier:@"SegueToMain" sender:self];
-    }
+//    }
 }
 
 - (void)hideKeyboard:(id)sender

@@ -8,3 +8,6 @@
 "loginErrorTitle"="登陆错误";
 "loginErrorMessage"="请输入用户名和密码";
 "loginErrorButton"="确定";
+
+"pubListFilterButton1"="按距离";
+"pubListFilterButton2"="按人数";
